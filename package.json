@@ -1,0 +1,26 @@
+{
+  "name": "playwrightl1",
+  "version": "1.0.0",
+  "description": "PlaywrightL1",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandhang/PlaywrightL1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anandhang/PlaywrightL1/issues"
+  },
+  "homepage": "https://github.com/anandhang/PlaywrightL1#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}
