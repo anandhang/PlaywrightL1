@@ -7,7 +7,7 @@ test('Testcase name', async ({page}) => {});
 
 test('Testcase name', async function testmethodName({page})  {});
 
-const functionName2 = async function openBrowser(){};
+const functionName2 = async function openBrowserTest(){};
 
 const functionName3 = async () => {};
 

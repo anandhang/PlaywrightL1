@@ -25,7 +25,7 @@ export default defineConfig({
   reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: 'https://rahulshettyacademy.com/loginpagePractise/',
+    //baseURL: 'https://rahulshettyacademy.com/loginpagePractise/',
     screenshot: 'on',
     trace: 'on',
     launchOptions: {
