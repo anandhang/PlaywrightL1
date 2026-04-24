@@ -23,6 +23,8 @@ export default defineConfig({
   workers: process.env.CI ? 1 : 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
+  /*Setup the global function*/
+  globalSetup: './global-setup.ts',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     //baseURL: 'https://rahulshettyacademy.com/loginpagePractise/',
@@ -31,6 +33,7 @@ export default defineConfig({
     launchOptions: {
       slowMo: 1000,
     },
+    storageState: 'state.json'
   },
 
   /* Configure projects for major browsers */
