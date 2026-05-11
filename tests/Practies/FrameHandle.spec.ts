@@ -35,7 +35,7 @@ test("TC_12354 Use frame", async ({browser}) =>
         await page.getByRole('link', {name:'Iframe with in an Iframe'}).click();
         await page.pause();
         const outerFrame = await page.frame({url: /MultipleFrames.html/});
-        if(outerFrame)
+        if(outerFrame!=null)
         {
             console.log("Outer frame URL:", outerFrame.url);
             const childFrames = outerFrame.childFrames();

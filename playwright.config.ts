@@ -73,7 +73,7 @@ export default defineConfig({
        name: 'Microsoft Edge',
        use: { ...devices['Desktop Edge'], channel: 'msedge' },
      },
-     */
+     
      {
        name: 'Google Chrome',
        use: 
@@ -82,6 +82,7 @@ export default defineConfig({
               headless:false
           },
      },
+     */
   ],
 
   /* Run your local dev server before starting the tests */

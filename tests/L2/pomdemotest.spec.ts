@@ -20,4 +20,4 @@ test("Test demo pom page", async ({page}) =>
         const productName = "iphone X";
         await UIObject.productPage.addProduct(productName);
         await UIObject.productPage.addToCard();
-;    });
+    });

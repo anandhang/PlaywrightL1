@@ -10,14 +10,17 @@ async function SelectBrowserAndLogin(browser: Browser){
         await CommonLoginSteps(page);
         await browserContext.close();
     }
+
 async function SelectContextAndLogin(browserContext: BrowserContext){
         const page = await browserContext.newPage();
         await CommonLoginSteps(page);
         await browserContext.close();
     }
+
 async function SelectPageAndLogin(page: Page){
         await CommonLoginSteps(page);
     }
+    
 async function CommonLoginSteps(page: Page)
     {
         await page.goto("https://practicetestautomation.com/practice-test-login/");
@@ -34,4 +37,5 @@ async function CommonLoginSteps(page: Page)
         await expect(submitbutton).toBeVisible();        
         await page.getByRole('button', {name:'Submit'}).click();
         await page.close();        
+        
     }
